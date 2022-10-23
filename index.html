@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8"> <!--utf: Unicode Transformation Format is a character encoding system to represents that each
+  character on screen consists of 2 byte -->
+
+  <title>App01</title>
+
+  <base href="https://Alvaro-Mendess.github.io/FirstAngularApp/"> <!--href: hypertext reference searching for files from root folder if it was <base href="/images">
+  will search only in imagees folder-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Full screen for mobile-->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+<!--Bootstrap-->
+<!-- CSS only 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+-->
+<!-- JavaScript Bundle with Popper 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+-->
+<!--Disadvantage of linking bootstrap if bootstrap get update my code may not function well its better to use bootstrap npm-->
+
+<style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13, 110, 253;--bs-secondary-rgb:108, 117, 125;--bs-success-rgb:25, 135, 84;--bs-info-rgb:13, 202, 240;--bs-warning-rgb:255, 193, 7;--bs-danger-rgb:220, 53, 69;--bs-light-rgb:248, 249, 250;--bs-dark-rgb:33, 37, 41;--bs-white-rgb:255, 255, 255;--bs-black-rgb:0, 0, 0;--bs-body-color-rgb:33, 37, 41;--bs-body-bg-rgb:255, 255, 255;--bs-font-sans-serif:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--bs-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:#0d6efd;--bs-link-hover-color:#0a58ca;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,*:before,*:after{box-sizing:border-box}@media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}</style><link rel="stylesheet" href="styles.a652f826dd670f5b.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a652f826dd670f5b.css"></noscript></head>
+<body>
+
+  <app-root></app-root> <!--runtime.js will convert app-root to HTML the browser can understand
+    reserves space on the web page for information supplied by other files in app Folder-->
+  
+<script src="runtime.1c03c6fc9fa1d25e.js" type="module"></script><script src="polyfills.6728dac83aec7d70.js" type="module"></script><script src="scripts.1e5b737ef6ac3687.js" defer></script><script src="main.8c9e32fcdc162691.js" type="module"></script>
+
+
+
+
+
+
+
+
+</body></html><!-- Angular is a collection of JavaScript files created by Google and depends on TypeScript
+
+Angular 1 or AngularJS uses Vanilla JS
+Angular 2 till 14 uses TypeScript
+
+Angular 1 project cant be upgraded/converted to Angular 2 project you need to reverse engineering (Redo the project)
+
+Why we use Angular?
+-Re-usability component (you can create your own HTML element/tag
+-SPA: Single Page Application (only sends 1 request to the servers)
+
+
+
+MPA: Multi Page Application (not usable anymore its old fashion)
+
+Disadvantage of MPA
+1-Not mobile friendly website
+2-Sends huge requests to server
+3-SEO will gives you lower rate
+
+//Too install angular/cli we write in CMD: npm i -g @angular/cli
+//@angular/cli is a package used to create Angular project
+//To check if Angular is installed we write in CMD:ng version
+//To uninstall a npm package we write in CMD: npm uninstall -g @angular/cli
+//To Create new Angular project we write in CMD: ng new app01
+
+//runtime.js is the webpack loader
+//polyfills.js will assure that all JS file or HTML will works the same in all browsers
+//styles.js all your css files
+//vendor.js set of Angular fuctions
+//main.js is entry point of the application all our code including components (ts, html and css codes)
+
+//devDependencies are packages used to develop Angular project
+//To build Angular Project we write in CMD: ng build   //This will create dist folder that contains Angular Project
+
+//tsconfig.json TypeScript compiler configuration used to control how TypeScript is converted in JavaScript
+//tsconfig.app.json will show the files that will be converted from TypeScript to JavaScript this file is merged with tsconfig.json
+//.gitignore will ignore the files while pushing from local repository (my pc) to remote repository (GitHub) not mandatory to exist in every project
+//karma.conf.js used for unit testing  | we write a code that tests a code
+//To run Angular Project we write in CMD: ng serve || ng serve -o to open browser directly
+//what happens after you write ng serve
+//1-TSC (Convert TS into JS)
+//2-Webpack is npm package used to transform many TS or CSS or jpg files into 1 file (Angular.json)
+//3-Express (Dev. Web Server)
+//4-nodemon (changes in src folder)
+
+//Require will include all classes/functions/variables
+//Import will include specific classes/functions/variables
+
+//Appmodule root module when you launch the application
+
+//assets folder contains images/fonts/js files   to call it we use <img src="./assets/1.jpg" atl="">
+
+//To create component we write in CMD: ng g c paitent || ng generate component paitent 
+
+//To Clear cache in NodeJS used if you find problems after update to new NodeJS version we write in CMD: npm clear cache --><!--To upload to github pages 1st you to write this CMD:ng build --base-href=https://Alvaro-Mendess.github.io/FirstAngularApp
+this will change <base href="/"> to my link so github can find the JS files
+-->
